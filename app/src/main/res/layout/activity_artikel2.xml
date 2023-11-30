@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".artikel2"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/maizeicon"/>
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="374dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@id/imageview"
+                android:background="@color/lime"
+                android:paddingTop="10dp"
+                android:text="Maize MindShare"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="46,2 Hektar Lahan Jagung Berpotensi Alami Gagal Panen"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/isiArtikel2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/artikell2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Kota Gorontalo, Kominfotik- Seluas 46,2 hektar lahan jagung dari total luasan kurang lebih 1250 hektar di Dungaliyo dan Batudaa berpotensi mengalami gagal panen karena posisi tanamnya yang memasuki musim kemarau. Hal ini diungkapkan Kepala Dinas Pertanian Provinsi Gorontalo Muljady Mario pada pertemuan bersama wartawan dan pimpinan media, di Angelato, Selasa malam (22/8/2023).\n
+\n“Kami terus melakukan pemantauan di lapangan, laporan dari tanaman padi sampai sekarang belum ada yang gagal panen. Untuk jagung memang ada kejadian di Dungaliyo dan Batudaa,” ungkap Muljady.\n
+\nMuljady menjelaskan ada tiga asuransi dimana dua diantaranya disubsidi oleh pemerintah. Untuk usaha tani pemerintah, mensubsidi sebesar Rp144 ribu dari premi Rp180 ribu, sehingga petani hanya membayar Rp36 ribu. Jika terjadi gagal panen, maka ganti rugi yang akan diterima sebesar Rp6 juta.\n
+Sementara untuk jagung tidak diberikan subsidi dengan premi Rp100 ribu, dan ganti rugi sebesar Rp6 juta. Terakhir, ada hewan ternak sapi yang akan mendapatkan ganti sebesar Rp10 juta dengan premi Rp200 ribu dan subsidi Rp160 ribu jika hilang atau diserang penyakit\n
+\n“Total yang sudah ikut asuransi dari luas sawah kita kurang lebih 32ribu hektar, sudah ada 4.250 hektar yang ikut asuransi padi,” kata Muljady.
+Di tempat yang sama, Penjagub Ismail Pakaya menyarankan kepada para petani yang tidak bisa menanam jagung ataupun padi melalui Kadis Pertanian, agar mengganti komoditi. Ia mencontohkan Makassar yang menjual buah semangka di musim kemarau karena tidak perlu ditanam didaerah yang berair.Mengantisipasi kekeringan ini, pihaknya akan mengintervensi pasar murah dan meminta data rawan pangan.\n
+\n“Biasanya saat kemarau bahan pangan kurang, harga cenderung naik, permintaan tetap, persediaannya kurang, hukum ekonomi pasti begitu. Tapi kita pemerintah sudah siap untuk itu,” ungkap Ismail.\n
+\nMelalui rapat forkopimda dan kabupaten/kota, pemerintah juga telah menyiapkan langkah antisipasi dengan kesepakatan untuk menyiapkan posko. Posko ini berfungsi untuk menerima dan menindaklanjuti laporan kekeringan padi, kekurangan air, dan kebakaran rumah atau hutan."/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lime"
+            android:layout_marginTop="-20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+
+</ScrollView>

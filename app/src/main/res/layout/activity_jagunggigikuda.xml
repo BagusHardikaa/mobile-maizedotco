@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JagunggigikudaActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="Varieties of Corn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/jenis"
+        android:text="Jagung Gigi Kuda  (Zea mays identata)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/jagunggigikuda"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/jagunggigikuda"/>
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="378dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="270dp"
+        android:textSize="18sp"
+        android:text="Jagung Gigi Kuda atau dent corn paling banyak ditemukan di Amerika Serikat. Biasanya, jagung ini dimanfaatkan sebagai bahan baku untuk pembuatan tepung jagung, roti jagung, keripik jagung, dan beberapa jenis makanan lainnya. Kandungan pati pada jagung gigi kuda yang tinggi sering diolah menjadi plastik. Kemudian, fruktosannya biasanya dipakai sebagai pemanis pada berbagai olahan makanan dan minuman.\n
+
+\nMemiliki ciri -ciri biji yang memiliki lekukan di bagian tengah atau atas biji dan ukuran biji cukup besar.
+Ada dua kategori hibrida jagung gigi kuda, biasanya digolongkan berdasarkan warna bijinya, yaitu kuning atau putih. Jagung gigi kuda yang berwarna kuning sering digunakan sebagai pakan ternak dan keperluan industri. Sedangkan jagung gigi kuda putih biasanya diproduksi sebagai bahan konsumsi manusia.
+"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/lime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

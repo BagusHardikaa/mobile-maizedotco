@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- activity_detail_penyakit.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    tools:context=".DetailActivityPenyakit"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#7BBD6F"
+        android:text="JeKit Corn"/>
+
+    <TextView
+        android:id="@+id/textViewNamaPenyakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Nama Penyakit"
+        android:paddingTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewPenyakit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textViewNamaPenyakit"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bulai_jagung" />
+
+    <TextView
+        android:id="@+id/textViewDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPenyakit"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Deskripsi Penyakit"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewPenjelasanDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeskripsi"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:text="Bulai merupakan penyakit yang disebabkan oleh jamur Peronosclerospora maydis maupun Peronosclerospora philippinensis. Jamur P. maydis ditemukan di seluruh wilayah Indonesia, sedangkan P. philippinensis ditemukan di Sulawesi Utara, Filipina, Taiwan, Muangthai, dan India.\n Gejala yang terdapat pada tanaman yang terinfeksi penyakit ini yaitu pada permukaan daun terdapat garis-garis sejajar tulang daun berwarna putih sampai kuning diikuti dengan garis-garis khlorotik sampai coklat bila infeksi makin lanjut. Kerugian hasil panen yang ditimbulkan oleh penyakit ini dapat mencapai 100%."
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/textViewSolusi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeskripsi"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Solusi Penyakit"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewPenjelasanSolusi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSolusi"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:text="a. Tanam varietas jagung yang tahan bulai seperti Kalingga, Arjuna, Wiyasa, Bromo, Parikesit, dan Hibrida Cl.\n
+b. Tidak menanam benih jagung yang berasal dari tanaman sakit.\n
+c. Tanam jagung secara serempak pada awal sampai akhir musim kemarau. Penanaman jagung pada peralihan musim (marengan atau labuhan) akan menderita kerugian besar karena bulai.\n
+d. Perlakuan benih dengan fungisida sistemik seperti Ridomil 35 SD (5 g formulasi/kg benih Ridomil mengandung bahan aktif metalaksil 35%)"
+        android:textSize="14dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_kembali"
+        android:layout_below="@id/textViewSolusi"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="btn_kembali"
+        android:text="Kembali"
+        app:backgroundTint="@color/greenbtn"
+        android:layout_marginLeft="100dp"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lime">
+
+    <item android:id="@+id/home1"
+        android:title="Home"
+        android:icon="@drawable/home1"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/alarm"
+        android:title="Task Minder"
+        android:icon="@drawable/alarm"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/corn"
+        android:title="Varieties of Corn"
+        android:icon="@drawable/corn"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/penyakit"
+        android:title="JeKit"
+        android:icon="@drawable/pest"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/artikel"
+        android:title="Maize MindShare"
+        android:icon="@drawable/article"
+        android:iconTint="@color/black"/>
+</menu>

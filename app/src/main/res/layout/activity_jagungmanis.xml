@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JagungmanisActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="Varieties of Corn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jagung Manis (Zea mays saccharata)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@id/jenis"
+        android:paddingTop="20dp"/>
+
+
+    <ImageButton
+        android:id="@+id/jagungmanis"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/jagungmanis"/>
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="378dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="240dp"
+        android:textSize="18sp"
+        android:text="Jagung manis atau sweet corn merupakan salah satu jenis jagung yang saat ini mulai berkembang dan mempunyai prospek penting di Indonesia.\n
+\nCiri-ciri :
+\n• Batang: Berwarna hijau.
+\n• Kepala sari (anther): Berwarna kuning.
+\n• Rambut tongkol: Berwarna kuning.
+\n• Biji: Berwarna kuning, menyerupai kaca dan mempunyai zat pati yang manis.
+\n• Tinggi tanaman (cm): 111.24 ± 18.36.
+\n• Tinggi tongkol (cm): 47.15 ± 13.48.
+\n• Panjang daun (cm): 65.28 ± 9.62.
+\n• Kandungan lemak pada jagung manis lebih tinggi daripada jagung lain."
+        android:textColor="@color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/lime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

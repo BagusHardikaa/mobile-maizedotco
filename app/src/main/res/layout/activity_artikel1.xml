@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".artikel1"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/maizeicon"/>
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="374dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@id/imageview"
+                android:background="@color/lime"
+                android:paddingTop="10dp"
+                android:text="Maize MindShare"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Kisah Sarjana yang Memilih Bertani Jagung, Kini Sehari Bisa Raup Rp 300 Juta"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/isiArtikel1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/artikell1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Menurut Anda, ada berapa persen sarjana pertanian yang lulus, meninggalkan ijazahnya, lalu memutuskan untuk membajak sawah? Kalau jawaban Anda penuh dengan keraguan, maka tak ada salahnya untuk mengetahui kisah seorang perempuan bernama Kartini, yang dari keputusannya untuk menggeluti bidang pertanian, ia kini berhasil sukses besar.\n
+\nTelah sejak kecil, perempuan yang bernama lengkap Kartini Lani itu hidup di pedesaan dan jauh dari ingar bingar kota. Namun, seiring berjalannya waktu, Kartini dewasa pun tak hanya berpangku tangan. Melihat potensi jagung yang melimpah di kawasan sekitar tempat tinggalnya di Grobogan, Jawa Tengah, ia lantas merintis usaha jagung. Memulai semua dari nol, Kartini mengembangkan usahanya sedikit demi sedikit, berawal dari sepetak tanah yang luasnya tak seberapa.\n
+\nUniknya, lantaran ketika memulai usaha itu, Kartini tergolong telah akrab dengan teknologi dan internet, ia menempuh jalur yang tak biasa untuk memasarkan produknya. Saat kebanyakan petani jagung menjual produk mereka ke tengkulak, Kartini memasarkan jagung hasil panennya melalui situs online dan media sosial.\n
+\nLewat cara tersebut, tak disangkanya, Kartini mendapatkan banyak klien dari berbagai kota, bahkan dari luar Pulau Jawa. Pembeli-pembeli dari Blora dan Pemalang, Tuban, Malang, Madiun, Ponorogo, Tasikmalaya, Jakarta, hingga beberapa daerah di Pulau Sumatera dan Kalimantan, menjadi konsumen rutin jagung Kartini yang dipasarkan lewat dunia maya itu.\n
+\nBerkat ketekunannya, seiring berjalannya waktu, usaha Kartini kian berkembang. Di bawah bendera usaha yang kemudian Kartini beri nama UD Putra Megatawang, konsumen jagung hasil panen Kartini makin meluas bahkan loyal hari ke hari.\n
+\nDi samping itu, melalui strategi promosi unik via daring, membludaknya permintaan pasar membuat UD Putra Megatawang dapat memanen jagung tak kurang dari 200 ton setiap harinya. Dengan harga jual jagung basah berkisar Rp 1.500 per kilogram, bisnis Kartini mendatangkan omzet tak kurang dari Rp 300 juta per hari atau sekitar Rp 9 miliar setiap bulannya.\n
+\nKini, dengan dibantu 30 tenaga kerja serabutan dan 10 admin, pesatnya perkembangan UD Putra Megatawang membuat Kartini mulai melebarkan sayap bisnisnya: saat ini, Kartini tak hanya memasarkan jagung, namun juga hasil pertanian lain, seperti gabah, beras, kacang hijau, kedelai, dan lain sebagainya.\n
+\nDengan menjunjung tinggi kejujuran dan menawarkan harga yang berani bersaing pada para pembeli, Kartini kini menjadi juragan yang mengantongi miliaran rupiah setiap bulan dari bisnis pertanian yang ia tekuni. Maka kini, pada saat anggapan banyak orang membuat profesi petani tampak amat remeh, Kartini yang merupakan seorang perempuan dengan mantap menggeluti urusan itu. Dari keputusan tersebut, tak datang apa-apa dalam hidupnya kecuali nasib baik dan kekayaan."/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lime"
+            android:layout_marginTop="-20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+
+</ScrollView>

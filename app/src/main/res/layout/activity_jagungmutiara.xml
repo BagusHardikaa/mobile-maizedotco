@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MutiaraActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/maizeicon"/>
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="374dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@id/imageview"
+                android:background="@color/lime"
+                android:paddingTop="10dp"
+                android:text="Varieties of Corn"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Jagung Mutiara (Zea mays indurata)"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/jagungmutiara"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/jagungmutiara"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Ternyata jenis jagung mutiara atau flint corn banyak tumbuh di Indonesia, khususnya di Pulau Jawa.
+Para petani lebih senang menanam jagung mutiara karena tahan terhadap hama gudang. Di Indonesia sendiri, jagung mutiara banyak dimanfaatkan sebagai pakan ternak atau dikonsumsi oleh masyarakat.
+Sedangkan di negara Amerika dan Argentina, jagung ini hanya digunakan sebagai pakan ternak saja.\n
+
+\n Ciri-ciri:\n
+• Biji: memiliki warna biji yang lebih dari satu warna. Bentuknya bulat, agak kecil, keras, dan licin.
+\n• Warna Polong: berwarna putih atau hijau muda.
+\n• Rasa: memiliki rasa yang lezat dan sedikit manis. Rasa manisnya biasanya lebih ringan daripada jagung manis.
+\n• Tinggi Tanaman: biasanya tidak terlalu tinggi, yaitu sekitar 1,5 hingga 2 meter.
+\n• Pemanenan: dilakukan ketika bijinya sudah cukup matang, tetapi sebelum biji mengeras sepenuhnya.
+\n• Penggunaan: sering digunakan dalam berbagai hidangan, terutama dalam hidangan Asia seperti bubur mutiara (tapioka pearl) dan hidangan penutup seperti es krim mutiara atau sup mutiara. Mereka juga digunakan dalam hidangan gurih seperti sup atau bubur.
+\n• Kandungan Nutrisi: mengandung karbohidrat kompleks, serat, vitamin B, dan mineral seperti mangan."/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuJekit"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="JeKit Corn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnstart"
+        android:layout_below="@id/simpleImageView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btns_start"
+        android:text="Diagnosa Penyakit"
+        app:backgroundTint="@color/greenbtn"
+        android:layout_marginLeft="100dp"
+        app:cornerRadius="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_info"
+        android:layout_below="@id/btnstart"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn_info"
+        android:text="Info Penyakit"
+        app:backgroundTint="@color/greenbtn"
+        android:layout_marginLeft="100dp"
+        app:cornerRadius="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_mongo"
+        android:layout_below="@id/btn_info"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="btn_mongo"
+        android:text="Data Penyakit"
+        app:backgroundTint="@color/greenbtn"
+        android:layout_marginLeft="100dp"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>

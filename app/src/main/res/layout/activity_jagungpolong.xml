@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JagungpolongActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/maizeicon"/>
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="374dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@id/imageview"
+                android:background="@color/lime"
+                android:paddingTop="10dp"
+                android:text="Varieties of Corn"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Jagung Polong  (Zea mays aunicula)"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/jagungpolong"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/jagungpolong"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Jagung polong dikenal juga sebagai pod corn atau jagung liar. Pertama kali ditemukan di Amerika Selatan, jagung pod tidak dapat dimakan. Karena memiliki tampilan menarik, biji jagung ini hanya digunakan sebagai hiasan.\n
+
+\nCiri-ciri :\n
+• Tinggi Tanaman: Jagung polong biasanya lebih pendek dibandingkan dengan jenis jagung yang tumbuh untuk biji. Tanaman jagung polong biasanya mencapai ketinggian antara 1,5 hingga 2,5 meter.
+\n• Batang: berwarna hijau dan silindris.
+\n• Daun: berwarna hijau muda hingga hijau tua. Daunnya panjang dan lebar dengan tulang daun yang jelas terlihat.
+\n• Tangkai Polong: pada jagung polong adanya polong yang terbentuk pada tangkai tanaman. Polong jagung polong biasanya berwarna hijau, dan panjangnya bisa bervariasi.
+\n• Biji: berukuran lebih kecil daripada biji jagung yang tumbuh untuk tujuan pangan. Biji-bijian ini memiliki warna yang beragam, termasuk kuning, putih, merah, atau bahkan ungu, tergantung pada varietasnya.
+\n• Bentuk dan Warna Polong: biasanya lebih panjang daripada polong biji jagung, dan warnanya bisa hijau, kuning muda, atau merah muda.
+\n• Pemanenan: Jagung polong biasanya dipanen ketika polongnya masih muda dan bijinya belum mengeras. Ini adalah waktu ketika jagung polong memiliki rasa manis yang maksimal."/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+
+</ScrollView>

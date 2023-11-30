@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <!--  Gambar Jagung  -->
+    <ImageView
+        android:id="@+id/jagungImageView"
+        android:layout_width="272dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Gambar Jagung"
+        android:src="@drawable/maize"/>
+
+    <!--  Tombol Lihat Detail  -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="150dp"
+        android:onClick="login"
+        android:text="login"
+        android:textColor="@color/black"
+        android:backgroundTint="#7BBD6F"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

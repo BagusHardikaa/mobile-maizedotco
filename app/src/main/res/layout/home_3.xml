@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home3"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mengapa Website Maizedotco Terdapat Fitur TaskMinder ?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:layout_below="@id/jenis"
+        android:paddingTop="20dp"/>
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="115dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/jagungtiga"/>
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="378dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="280dp"
+        android:textSize="18sp"
+        android:text="Fitur task minder bertujuan untuk mencegah terjadinya gagal panen seperti pada kasus di daerah Lampung.\nKlik link di bawah ini untuk melihat lebih jelas.
+https://www.kupastuntas.co/2022/08/17/pemupukan-kerap-telat-petani-jagung-di-lampung-kehilangan-pendapatan-rp66-juta-per-tahun\n \nPemupukan yang tidak tepat waktu dapat menyebabkan kegagalan panen. Dengan alarm, Petani Jagung dapat menghindari risiko ini dan meningkatkan kemungkinan kesuksesan panen."
+        android:textColor="@color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/lime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

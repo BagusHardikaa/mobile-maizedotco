@@ -1,0 +1,116 @@
+package com.example.maizedotco;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.os.AsyncTask;
+import android.widget.Toast;
+
+public class CreateActivity extends AppCompatActivity {
+
+    TextView tvResult;
+    Button btn_simpan, btn_kembali, btn_mongo;
+    EditText nama, penyakit;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_create);
+
+        tvResult = findViewById(R.id.tvResult);
+        btn_simpan = findViewById(R.id.btn_simpan);
+        btn_kembali = findViewById(R.id.btn_kembali);
+        btn_mongo = findViewById(R.id.btn_mongo);
+        nama = findViewById(R.id.nama);
+        penyakit = findViewById(R.id.penyakit);
+
+        btn_simpan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String namaValue = nama.getText().toString();
+                String penyakitValue = penyakit.getText().toString();
+
+                new SaveDataToMongoTask().execute(namaValue, penyakitValue);
+            }
+        });
+
+        btn_kembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        btn_mongo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getAllPenyakit(view);
+            }
+        });
+    }
+
+    public void getAllPenyakit(View view) {
+        String urlEndpoint = "https://us-east-1.aws.data.mongodb-api.com/app/application-0-lygjy/endpoint/getAllPenyakit";
+        StringRequest sr = new StringRequest(
+                Request.Method.GET,
+                urlEndpoint,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            // Parse the JSON response
+                            JSONObject hasil = new JSONObject(response);
+                            JSONArray result = hasil.getJSONArray("result");
+
+                            // Clear existing text in tvResult
+                            tvResult.setText("");
+
+                            // Iterate through the array and append data to tvResult
+                            for (int i = 0; i < result.length(); i++) {
+                                JSONObject penyakit = result.getJSONObject(i);
+                                String namaPenyakit = penyakit.getString("nama_penyakit");
+                                String deskripsi = penyakit.getString("deskripsi");
+                                String solusi = penyakit.getString("solusi");
+
+                                // Append data to tvResult
+                                tvResult.append("Nama Penyakit: " + namaPenyakit + "\n");
+                                tvResult.append("Deskripsi: " + deskripsi + "\n");
+                                tvResult.append("Solusi: " + solusi + "\n\n");
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(CreateActivity.this, "Error parsing JSON", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // Handle errors
+                        Toast.makeText(CreateActivity.this, "Error: " + error.toString().trim(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+
+        // Add the request to the RequestQueue
+        RequestQueue rq = Volley.newRequestQueue(getApplicationContext());
+        rq.add(sr);
+    }
+}

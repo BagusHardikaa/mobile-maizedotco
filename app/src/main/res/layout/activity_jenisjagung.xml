@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/jenisjagung"
+    tools:context=".JenisjagungActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="Varieties of Corn"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/jagungmanis"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/jagungmanis"
+        android:onClick="jagungmanis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="55dp"
+        android:textColor="@color/black"
+        android:text="Jagung Manis"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/jagungpolong"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/jagungpolong"
+        android:onClick="jagungpolong"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="240dp"
+        android:textColor="@color/black"
+        android:text="Jagung Polong"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/jagunggigikuda"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/jagunggigikuda"
+        android:onClick="jagunggigikuda"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:text="Jagung Gigikuda"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/jagungketan"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/jagungketan"
+        android:onClick="jagungketan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="245dp"
+        android:textColor="@color/black"
+        android:text="Jagung Ketan"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/jagungbrondong"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/popcorn"
+        android:onClick="jagungberondong"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="615dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:text="Jagung Berondong"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/jagungmutiara"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/jagungmutiara"
+        android:onClick="jagungmutiara"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="615dp"
+        android:layout_marginLeft="240dp"
+        android:textColor="@color/black"
+        android:text="Jagung Mutiara"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomnavview"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/lime"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

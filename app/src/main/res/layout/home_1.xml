@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home1"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/maizeicon"/>
+
+    <TextView
+        android:id="@+id/jenis"
+        android:layout_width="374dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:background="@color/lime"
+        android:paddingTop="10dp"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mengapa Aplikasi Maizedotco
+Mengambil Topik Jagung ?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_below="@id/jenis"
+        android:paddingTop="20dp"/>
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="115dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/jagungsatu"/>
+
+    <TextView
+        android:layout_width="334dp"
+        android:layout_height="378dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="280dp"
+        android:textSize="18sp"
+        android:text="Jagung (Zea mays) merupakan tanaman pangan utama ketiga setelah padi  dan
+gandum di dunia dan menempati posisi kedua setelah padi di Indonesia.\n \nJagung
+juga merupakan salah satu tanaman serealia (sereal atau biji-bijian) yang
+strategis dan bernilai ekonomis serta mempunyai peluang untuk dikembangkan
+menjadi produk olahan karena kedudukannya sebagai sumber utama karbohidrat
+dan protein setelah beras."
+        android:textColor="@color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/lime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

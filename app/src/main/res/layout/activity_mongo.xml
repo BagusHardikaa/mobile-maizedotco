@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:context=".MongoDB"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/maizeicon"/>
+
+        <TextView
+            android:id="@+id/jenis"
+            android:layout_width="374dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@id/imageview"
+            android:background="@color/lime"
+            android:paddingTop="10dp"
+            android:text="JeKit Corn"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_mongo"
+            android:layout_below="@id/jenis"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="btnlogin"
+            android:text="Get All Penyakit"
+            app:backgroundTint="@color/greenbtn"
+            android:layout_marginLeft="100dp"
+            app:cornerRadius="20dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_mongo"
+            android:layout_marginTop="30dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/black"
+            android:text="Hasil:" />
+
+    </RelativeLayout>
+
+</ScrollView>

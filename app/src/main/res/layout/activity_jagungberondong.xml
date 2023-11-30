@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerondongActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/maizeicon"/>
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="374dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_toRightOf="@id/imageview"
+                android:background="@color/lime"
+                android:paddingTop="10dp"
+                android:text="Varieties of Corn"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Jagung Berondong (Zea mays everta)"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/jagungmutiara"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/popcorn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Sama seperti namanya, jagung berondong merupakan bahan baku utama dalam pembuatan popcorn atau berondong jagung.\n
+
+\nCiri-ciri :
+\n• Biji: bulat, kecil dan keras. Berwarna kuning, putih, merah muda, ungu, atau campuran warna tersebut.
+\n• Kelembapan: berkisar 14% sampai 20% dan akan berubah menjadi uap saat dipanaskan. Biji jagung berondong dapat mengembang hingga 10 sampai 30 kali lebih besar dari ukuran awal.
+\n• Kulit pericarp yang keras.
+\n• Kandungan air: memiliki kandungan air yang rendah, biasanya kurang dari 14%.
+\n• Tinggi Tanaman: sekitar 1,5 hingga 2 meter.
+\n• Tingkat Manis: jagung popcorn tidak memiliki rasa manis atau bahkan gurih ketika dimakan dalam bentuk popcorn.
+\n• Pemanenan: Jagung popcorn biasanya dipanen ketika bijinya sudah matang, tetapi masih harus dipanaskan untuk membuat popcorn yang meletup. Pemanenan dapat dilakukan secara manual atau mekanis, tergantung pada skala produksinya."/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </LinearLayout>
+
+</ScrollView>
